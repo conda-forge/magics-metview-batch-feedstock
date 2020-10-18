@@ -49,10 +49,12 @@ requirements:
 test:
   commands:
     - printf "%s\n" "${MAGPLUS_HOME:?MAGPLUS_HOME is not set}"
-    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}
-    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}
-    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}
-    - test -f $PREFIX/lib64/libMagWrapper.a
+    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [osx]
+    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [osx]
 
 about:
   home: https://software.ecmwf.int/wiki/display/MAGP/
