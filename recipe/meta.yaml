@@ -10,7 +10,7 @@ source:
   sha256: d6f5682772ba7012f845b0c37f7bbaf5e12e6e9cf36da7524b234d8dc073ad2c
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
   detect_binary_files_with_prefix: true
 
@@ -49,9 +49,9 @@ requirements:
 test:
   commands:
     - printf "%s\n" "${MAGPLUS_HOME:?MAGPLUS_HOME is not set}"
-    - test -f $PREFIX/lib64/libMagPlus${SHLIB_EXT}  # [linux]
-    - test -f $PREFIX/lib64/libMagPlusSingle${SHLIB_EXT}  # [linux]
-    - test -f $PREFIX/lib64/libMagPlusDouble${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib/libMagPlus${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [linux]
+    - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [linux]
     - test -f $PREFIX/lib/libMagPlus${SHLIB_EXT}  # [osx]
     - test -f $PREFIX/lib/libMagPlusSingle${SHLIB_EXT}  # [osx]
     - test -f $PREFIX/lib/libMagPlusDouble${SHLIB_EXT}  # [osx]
