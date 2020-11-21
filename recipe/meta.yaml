@@ -10,7 +10,7 @@ source:
   sha256: 11a7f4dfff5b6ecb4d290441ae0700271c4578ca3addfb91d53007b174e47674
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   detect_binary_files_with_prefix: true
 
@@ -22,7 +22,6 @@ requirements:
     - {{ compiler('cxx') }}
     - pkg-config
   host:
-    - boost-cpp
     - expat
     - glib
     - pango
@@ -30,7 +29,6 @@ requirements:
     - proj
     - eccodes
     - libnetcdf
-    - jinja2
     - zlib
   run:
     - expat
