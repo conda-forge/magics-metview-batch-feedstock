@@ -40,6 +40,8 @@ requirements:
     - simplejson
     - libnetcdf
     - zlib
+    - openlibm  # [osx]
+
   run_constrained:
     # magics-metview-batch is incompatible with magics-metview and magics
     - magics-metview ==9999999999
