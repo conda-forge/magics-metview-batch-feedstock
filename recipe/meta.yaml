@@ -30,6 +30,7 @@ requirements:
     - eccodes
     - libnetcdf
     - zlib
+    - openlibm  # [osx]
   run:
     - expat
     - pango
