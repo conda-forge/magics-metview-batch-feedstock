@@ -27,7 +27,7 @@ requirements:
     - pango
     - cairo
     - proj
-    - eccodes
+    - eccodes >=2.20.0
     - libnetcdf
     - zlib
     - openlibm  # [osx]
@@ -36,7 +36,7 @@ requirements:
     - pango
     - cairo
     - proj
-    - eccodes
+    - eccodes >=2.20.0
     - simplejson
     - libnetcdf
     - zlib
