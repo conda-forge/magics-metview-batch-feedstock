@@ -10,7 +10,7 @@ source:
   sha256: ace62189425030ef151c811939a3d027cada5cfa683f65ab68d30c8864b93e3b
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   detect_binary_files_with_prefix: true
 
